@@ -12,8 +12,11 @@ const listar = async (req, res) => {
 };
 
 // POST /manutencao - registra um reparo em um equipamento (técnico)
+// Body esperado: { chamado_id, equipamento_id, descricao }
+// Após registrar, atualizar chamados.status para 'resolvido'
+// e equipamentos.status para 'operacional'
 const registrar = async (req, res) => {
-  // TODO: inserir em historico_manutencao e atualizar status do equipamento
+  // TODO
   res.json({ mensagem: 'registrar manutenção - não implementado' });
 };
 

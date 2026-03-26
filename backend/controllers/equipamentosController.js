@@ -6,7 +6,7 @@
 
 const db = require('../config/database');
 
-// GET /equipamentos - lista todos (admin/técnico) ou só disponíveis (cliente)
+// GET /equipamentos - lista todos os equipamentos do inventário
 const listar = async (req, res) => {
   // TODO
   res.json({ mensagem: 'listar equipamentos - não implementado' });

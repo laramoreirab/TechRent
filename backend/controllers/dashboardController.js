@@ -6,8 +6,8 @@
 
 const db = require('../config/database');
 
-// GET /dashboard/admin - resumo geral por status de equipamento (apenas admin)
-// Usa a view: view_resumo_admin
+// GET /dashboard/admin - resumo geral de chamados e equipamentos (apenas admin)
+// Usa as views: view_resumo_chamados e view_resumo_equipamentos
 const resumoAdmin = async (req, res) => {
   // TODO
   res.json({ mensagem: 'resumoAdmin - não implementado' });

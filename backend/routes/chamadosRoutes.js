@@ -1,11 +1,11 @@
 // =============================================
-// ROTAS DE ALUGUÉIS (CHAMADOS)
+// ROTAS DE CHAMADOS
 // =============================================
 
 const express = require('express');
 const router = express.Router();
 const { autenticar, autorizar } = require('../middlewares/auth');
-const ctrl = require('../controllers/alugueisController');
+const ctrl = require('../controllers/chamadosController');
 
 // Listar chamados (cada perfil vê uma visão diferente — lógica no controller)
 router.get('/', autenticar, ctrl.listar);

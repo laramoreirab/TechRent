@@ -14,11 +14,11 @@ require('dotenv').config();
 const express = require('express');
 
 // ---- Importação das rotas ----
-const authRoutes        = require('./routes/authRoutes');
+const authRoutes         = require('./routes/authRoutes');
 const equipamentosRoutes = require('./routes/equipamentosRoutes');
-const alugueisRoutes    = require('./routes/alugueisRoutes');
-const manutencaoRoutes  = require('./routes/manutencaoRoutes');
-const dashboardRoutes   = require('./routes/dashboardRoutes');
+const chamadosRoutes     = require('./routes/chamadosRoutes');
+const manutencaoRoutes   = require('./routes/manutencaoRoutes');
+const dashboardRoutes    = require('./routes/dashboardRoutes');
 
 const app = express();
 
@@ -35,7 +35,7 @@ app.use(express.json());
 // Cada prefixo aponta para um arquivo de rotas separado
 app.use('/auth',         authRoutes);
 app.use('/equipamentos', equipamentosRoutes);
-app.use('/alugueis',     alugueisRoutes);
+app.use('/chamados',     chamadosRoutes);
 app.use('/manutencao',   manutencaoRoutes);
 app.use('/dashboard',    dashboardRoutes);
 
