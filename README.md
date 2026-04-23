@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## TechRent - MVP de Chamados / Manutencao (TI)
 
 Este MVP tem foco em centralizar o relato de problemas de TI, permitir que administradores gerenciem o fluxo e que tecnicos resolvam os chamados, com base no modelo de banco de dados presente em `bd/`.
