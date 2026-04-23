@@ -33,7 +33,11 @@ const autenticar = (req, res, next) => {
     const payload = jwt.verify(token, process.env.JWT_SECRET);
 
     // Salva os dados do usuário na requisição para uso nas próximas funções
-    req.usuario = payload;
+    req.usuario = { 
+      id: payload.id,
+      nivel_acesso: payload.nivel_acesso,
+      email: payload.email
+    };
 
     next(); // Tudo certo, pode continuar
   } catch (err) {
