@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## TechRent - MVP de Chamados / Manutencao (TI)
 
 Este MVP tem foco em centralizar o relato de problemas de TI, permitir que administradores gerenciem o fluxo e que tecnicos resolvam os chamados, com base no modelo de banco de dados presente em `bd/`.
@@ -154,3 +155,6 @@ Ao implementar o Express + JWT, a recomendacao e:
   - registrar reparos em `historico_manutencao`
   - dashboards usando as views `view_painel_tecnico` e `view_resumo_admin`
 - Regras de autorizacao por `usuarios.nivel_acesso`
+=======
+# TechRent
+>>>>>>> 2276ab46a94433d28ec3080e7270b3d80faf8aa5
